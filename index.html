@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="styles/style.css" rel="stylesheet" type="text/css">
+        
+        <title>Contacto</title>
+
+    </head>
+
+    <body>
+        <h1 class="title">Contacto</h1>
+        <div class="contenedor">
+                <form action="#" method="post">
+                    <div class="form">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+
+                    <div class="form">
+                        <label for="email">Correo electronico</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                        <p>Razon</p>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" id="queja" name="razon" value="Queja">
+                                <span for="queja">Queja</span>
+                            </label>
+
+                            <label>
+                                <input type="radio" id="agenCita" name="razon" value="Agendar Cita">
+                                <span for="agenCita">Agendar Cita</span>
+                            </label>
+
+                            <label>
+                                <input type="radio" id="aclaracion" name="razon" value="Aclaracion">
+                                <span for="aclaracion">Aclaracion</span>
+                            </label>
+                        </div>
+
+                        <p>Detalles</p>
+                    <div class="form">
+                        <textarea id="details" name="details" rows="5" required></textarea>
+                    </div>
+                    <br>
+                    <div class="form">
+                        <label for="source">¿Cómo nos conociste?</label>
+                            <select id="source" name="source" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="not_yet">Aún no</option>
+                                <option value="internet">Internet</option>
+                                <option value="recommendation">Recomendación</option>
+                            </select>
+                    </div>
+                    <br>
+                    <div>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
